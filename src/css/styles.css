@@ -1,0 +1,32 @@
+/* Spacing */
+/* Colors */
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.utility-nav--mid .navbar {
+  display: block; }
+  .utility-nav--mid .navbar .nav-item {
+    color: #1d5970;
+    align-items: center;
+    display: flex; }
+    .utility-nav--mid .navbar .nav-item:not(:last-child)::after {
+      margin: 0 0.5rem;
+      background-color: #1d5970;
+      content: "";
+      display: inline;
+      height: calc(100% - 1rem);
+      width: 0.0625rem; }
+    .utility-nav--mid .navbar .nav-item .nav-link {
+      color: #1d5970;
+      font-weight: 400;
+      font-size: 1.125em;
+      text-decoration: none;
+      display: block;
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out; }
+      .utility-nav--mid .navbar .nav-item .nav-link:hover, .utility-nav--mid .navbar .nav-item .nav-link:focus {
+        border: 1px solid #1d5970;
+        border-radius: 0.375rem; }
