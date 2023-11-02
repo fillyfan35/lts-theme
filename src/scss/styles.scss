@@ -80,3 +80,25 @@ body {
     }
   }
 }
+
+
+.bg-teal {
+  background-color: $dark_teal;
+
+  .main-nav {
+    width: unset;
+  }
+}
+
+.main-nav {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-family: $base_font;
+        color: $beige;
+        line-height: 1.6;
+        font-weight: 700;
+      }
+    }
+  }
+}

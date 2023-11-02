@@ -49,3 +49,14 @@ body {
     .utility-nav--end form .search-box .btn-outline-success:hover, .utility-nav--end form .search-box .btn-outline-success:focus {
       background-color: #fff;
       color: #1d5970; }
+
+.bg-teal {
+  background-color: #1d5970; }
+  .bg-teal .main-nav {
+    width: unset; }
+
+.main-nav .navbar-nav .nav-item .nav-link {
+  font-family: "proxima-nova", sans-serif;
+  color: #fff6da;
+  line-height: 1.6;
+  font-weight: 700; }
