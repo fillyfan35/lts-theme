@@ -49,3 +49,29 @@ body {
     .utility-nav--end form .search-box .btn-outline-success:hover, .utility-nav--end form .search-box .btn-outline-success:focus {
       background-color: #fff;
       color: #1d5970; }
+
+.bg-teal {
+  background-color: #1d5970; }
+  .bg-teal .main-nav {
+    width: unset; }
+
+.main-nav .navbar-nav .nav-item .nav-link {
+  font-family: "proxima-nova", sans-serif;
+  color: #fff6da;
+  line-height: 1.6;
+  font-weight: 700; }
+  .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    content: '\f078';
+    border: 0;
+    vertical-align: .25em;
+    margin-left: 1em;
+    font-size: .55rem; }
