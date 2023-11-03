@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: red;
 }
 
 .utility-nav {
@@ -83,5 +82,29 @@ body {
 
   .main-nav {
     width: unset;
+  }
+}
+
+.main-nav {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-family: $base_font;
+        color: $beige;
+        line-height: 1.6;
+        font-weight: 700;
+
+        &.dropdown-toggle {
+          &::after {
+            @include font_awesome_family;
+            content: '\f078';
+            border: 0;
+            vertical-align: .25em;
+            margin-left: 1em;
+            font-size: .55rem;
+          }
+        }
+      }
+    }
   }
 }
