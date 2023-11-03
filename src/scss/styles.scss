@@ -9,41 +9,41 @@ body {
 
 .utility-nav {
   &--mid {
-    .navbar {
-      display: block;
+    .navbar-toggler {
+      width: 55px;
+    }
 
-        .nav-item {
-          color: $dark_teal;
-          align-items: center;
-          display: flex;
-          
-          &:not(:last-child) {
-            &::after {
-              margin: 0 $space_half;
-              background-color: $dark_teal;
-              content: "";
-              display: inline;
-              height: calc(100% - 1rem);
-              width: 0.0625rem;
-            }
-          }
-          
-          .nav-link {
-            color: $dark_teal;
-            font-weight: 400;
-            font-size: 1.125em;
-            text-decoration: none;
-            display: block;
-            border: 1px solid transparent;
-            transition: all 0.3s ease-in-out;
-
-            &:hover,
-            &:focus {
-              border: 1px solid $dark_teal;
-              border-radius: 0.375rem;
-            }
-          }
+    .nav-item {
+      color: $dark_teal;
+      align-items: center;
+      display: flex;
+      
+      &:not(:last-child) {
+        &::after {
+          margin: 0 $space_half;
+          background-color: $dark_teal;
+          content: "";
+          display: inline;
+          height: calc(100% - 1rem);
+          width: 0.0625rem;
         }
+      }
+      
+      .nav-link {
+        color: $dark_teal;
+        font-weight: 400;
+        font-size: 1.125em;
+        text-decoration: none;
+        display: block;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          border: 1px solid $dark_teal;
+          border-radius: 0.375rem;
+        }
+      }
     }
   }
 
@@ -80,7 +80,6 @@ body {
     }
   }
 }
-
 
 .bg-teal {
   background-color: $dark_teal;
