@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.utility-nav--mid .navbar-toggler {
+  width: 55px; }
+
 .utility-nav--mid .nav-item {
   color: #1d5970;
   align-items: center;

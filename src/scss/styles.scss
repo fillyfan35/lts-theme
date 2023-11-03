@@ -9,6 +9,10 @@ body {
 
 .utility-nav {
   &--mid {
+    .navbar-toggler {
+      width: 55px;
+    }
+
     .nav-item {
       color: $dark_teal;
       align-items: center;
