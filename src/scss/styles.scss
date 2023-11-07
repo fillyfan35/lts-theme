@@ -83,6 +83,7 @@ body {
 
 .bg-teal {
   background-color: $dark_teal;
+  width: calc(100% + 2rem);
 
   .main-nav {
     width: unset;
