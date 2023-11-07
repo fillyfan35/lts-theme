@@ -57,11 +57,15 @@ body {
     width: unset; }
 
 .main-nav .navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
   font-family: "proxima-nova", sans-serif;
   color: #fff6da;
   line-height: 1.6;
-  font-weight: 700; }
+  font-weight: 700;
+  white-space: unset; }
   .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    display: flex;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     -moz-osx-font-smoothing: grayscale;
@@ -73,6 +77,6 @@ body {
     text-rendering: auto;
     content: '\f078';
     border: 0;
-    vertical-align: .25em;
-    margin-left: 1em;
+    vertical-align: 0;
+    margin-left: 16px;
     font-size: .55rem; }

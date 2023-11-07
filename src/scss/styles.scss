@@ -93,19 +93,23 @@ body {
   .navbar-nav {
     .nav-item {
       .nav-link {
+        display: flex;
+        align-items: center;
         font-family: $base_font;
         color: $beige;
         line-height: 1.6;
         font-weight: 700;
+        white-space: unset;
 
         &.dropdown-toggle {
           &::after {
+            display: flex;
             @include font_awesome_family;
             content: '\f078';
             border: 0;
-            vertical-align: .25em;
-            margin-left: 1em;
-            font-size: .55rem;
+            vertical-align: 0;
+            margin-left: 16px;
+            font-size: .55rem;;
           }
         }
       }
