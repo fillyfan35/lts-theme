@@ -17,6 +17,10 @@ body {
   }
 
   &--mid {
+    @include media-breakpoint-down(md) { 
+        background-color: $dark_teal;
+    }
+    
     .navbar-toggler {
       width: 55px;
     }
@@ -25,15 +29,21 @@ body {
       color: $dark_teal;
       align-items: center;
       display: flex;
+
+      @include media-breakpoint-down(lg) {
+        background-color: $white;
+      }
       
       &:not(:last-child) {
-        &::after {
-          margin: 0 $space_half;
-          background-color: $dark_teal;
-          content: "";
-          display: inline;
-          height: calc(100% - 1rem);
-          width: 0.0625rem;
+        @include media-breakpoint-up(lg) { 
+          &::after {
+            margin: 0 $space_half;
+            background-color: $dark_teal;
+            content: "";
+            display: inline;
+            height: calc(100% - 1rem);
+            width: 0.0625rem;
+          }
         }
       }
       

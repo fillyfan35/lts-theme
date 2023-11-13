@@ -11,6 +11,10 @@ body {
   .utility-nav--start svg {
     width: 300px; }
 
+@media (max-width: 991.98px) {
+  .utility-nav--mid {
+    background-color: #1d5970; } }
+
 .utility-nav--mid .navbar-toggler {
   width: 55px; }
 
@@ -18,13 +22,17 @@ body {
   color: #1d5970;
   align-items: center;
   display: flex; }
-  .utility-nav--mid .nav-item:not(:last-child)::after {
-    margin: 0 0.5rem;
-    background-color: #1d5970;
-    content: "";
-    display: inline;
-    height: calc(100% - 1rem);
-    width: 0.0625rem; }
+  @media (max-width: 1199.98px) {
+    .utility-nav--mid .nav-item {
+      background-color: #fff; } }
+  @media (min-width: 992px) {
+    .utility-nav--mid .nav-item:not(:last-child)::after {
+      margin: 0 0.5rem;
+      background-color: #1d5970;
+      content: "";
+      display: inline;
+      height: calc(100% - 1rem);
+      width: 0.0625rem; } }
   .utility-nav--mid .nav-item .nav-link {
     color: #1d5970;
     font-weight: 400;
