@@ -1,4 +1,4 @@
-@import '_variables', '_mixins';
+@import '_breakpoints', '_mixins', '_variables';
 
 body {
   font-family: $base_font;
@@ -10,7 +10,7 @@ body {
 .utility-nav {
   &--start {
     margin-right: 0;
-    
+
     svg {
       width: 300px;
     }
@@ -57,14 +57,40 @@ body {
 
   &--end {
     .btn-search {
-      color: $white;
-      background-color: $dark_teal;
-      border: 1px solid $dark_teal;
+      color: $almost_black;
+      background-color: $white;
+
+      @include media-breakpoint-up(lg) { 
+          background-color: $dark_teal;
+          border: 1px solid $dark_teal;
+          color: $white;
+      }
 
       &:hover,
       &:focus {
         color: $dark_teal;
         background-color: $white;
+      }
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-toggler {
+    background-color: $dark_teal;
+    border: 0;
+    border-radius: 0;
+    color: $white;
+    font-size: unset;
+    line-height: unset;
+
+    .navbar-toggler-icon {
+      background-image: unset;
+      height: unset;
+      width: unset;
+      
+      .fa-bars {
+        font-size: 30px;
       }
     }
   }

@@ -38,12 +38,30 @@ body {
       border-radius: 0.375rem; }
 
 .utility-nav--end .btn-search {
-  color: #fff;
-  background-color: #1d5970;
-  border: 1px solid #1d5970; }
+  color: #15181b;
+  background-color: #fff; }
+  @media (min-width: 992px) {
+    .utility-nav--end .btn-search {
+      background-color: #1d5970;
+      border: 1px solid #1d5970;
+      color: #fff; } }
   .utility-nav--end .btn-search:hover, .utility-nav--end .btn-search:focus {
     color: #1d5970;
     background-color: #fff; }
+
+.navbar-light .navbar-toggler {
+  background-color: #1d5970;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-size: unset;
+  line-height: unset; }
+  .navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-image: unset;
+    height: unset;
+    width: unset; }
+    .navbar-light .navbar-toggler .navbar-toggler-icon .fa-bars {
+      font-size: 30px; }
 
 .bg-teal {
   background-color: #1d5970;
