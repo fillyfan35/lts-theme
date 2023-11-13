@@ -6,6 +6,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.utility-nav--start {
+  margin-right: 0; }
+  .utility-nav--start svg {
+    width: 300px; }
+
+@media (max-width: 991.98px) {
+  .utility-nav--mid {
+    background-color: #1d5970; } }
+
 .utility-nav--mid .navbar-toggler {
   width: 55px; }
 
@@ -13,13 +22,17 @@ body {
   color: #1d5970;
   align-items: center;
   display: flex; }
-  .utility-nav--mid .nav-item:not(:last-child)::after {
-    margin: 0 0.5rem;
-    background-color: #1d5970;
-    content: "";
-    display: inline;
-    height: calc(100% - 1rem);
-    width: 0.0625rem; }
+  @media (max-width: 1199.98px) {
+    .utility-nav--mid .nav-item {
+      background-color: #fff; } }
+  @media (min-width: 992px) {
+    .utility-nav--mid .nav-item:not(:last-child)::after {
+      margin: 0 0.5rem;
+      background-color: #1d5970;
+      content: "";
+      display: inline;
+      height: calc(100% - 1rem);
+      width: 0.0625rem; } }
   .utility-nav--mid .nav-item .nav-link {
     color: #1d5970;
     font-weight: 400;
@@ -32,24 +45,31 @@ body {
       border: 1px solid #1d5970;
       border-radius: 0.375rem; }
 
-.utility-nav--end form .search-box {
-  border: solid 1px #e1e1e1;
-  border-radius: 0.375rem;
-  width: 100%; }
-  .utility-nav--end form .search-box input[type="search"] {
-    padding-right: 4rem;
-    color: #6c757d;
-    border: 0;
-    outline: none; }
-    .utility-nav--end form .search-box input[type="search"]:focus {
-      box-shadow: none; }
-  .utility-nav--end form .search-box .btn-outline-success {
-    color: #fff;
-    background-color: #1d5970;
-    border-color: #1d5970; }
-    .utility-nav--end form .search-box .btn-outline-success:hover, .utility-nav--end form .search-box .btn-outline-success:focus {
-      background-color: #fff;
-      color: #1d5970; }
+.utility-nav--end .btn-search {
+  color: #15181b;
+  background-color: #fff; }
+  @media (min-width: 992px) {
+    .utility-nav--end .btn-search {
+      background-color: #1d5970;
+      border: 1px solid #1d5970;
+      color: #fff; } }
+  .utility-nav--end .btn-search:hover, .utility-nav--end .btn-search:focus {
+    color: #1d5970;
+    background-color: #fff; }
+
+.navbar-light .navbar-toggler {
+  background-color: #1d5970;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-size: unset;
+  line-height: unset; }
+  .navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-image: unset;
+    height: unset;
+    width: unset; }
+    .navbar-light .navbar-toggler .navbar-toggler-icon .fa-bars {
+      font-size: 30px; }
 
 .bg-teal {
   background-color: #1d5970;
