@@ -8,6 +8,14 @@ body {
 }
 
 .utility-nav {
+  &--start {
+    margin-right: 0;
+    
+    svg {
+      width: 300px;
+    }
+  }
+
   &--mid {
     .navbar-toggler {
       width: 55px;
@@ -48,34 +56,15 @@ body {
   }
 
   &--end {
-    form {
-      .search-box {
-        border: solid 1px $light_grey;
-        border-radius: 0.375rem;
-        width: 100%;
+    .btn-search {
+      color: $white;
+      background-color: $dark_teal;
+      border: 1px solid $dark_teal;
 
-        input[type="search"] {
-          padding-right: $spacer_four;
-          color: $grey;
-          border: 0;
-          outline: none;
-
-          &:focus {
-            box-shadow: none;
-          }
-        }
-
-        .btn-outline-success {
-          color: $white;
-          background-color: $dark_teal;
-          border-color: $dark_teal;
-
-          &:hover,
-          &:focus {
-            background-color: $white;
-            color: $dark_teal;
-          }
-        }
+      &:hover,
+      &:focus {
+        color: $dark_teal;
+        background-color: $white;
       }
     }
   }
