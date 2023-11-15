@@ -188,7 +188,10 @@ body {
 
   &--left {
     padding-right: $space_three;
-    border-right: solid 1px $white;
+
+    @include media-breakpoint-up(md) {
+      border-right: solid 1px $white;
+    }
 
     .footer--logo {
       margin-bottom: $space_three;
@@ -202,6 +205,10 @@ body {
     .footer--social {
       .footer--heading {
         line-height: 1.2;
+
+        @include media-breakpoint-down(md) {
+          text-align: center;
+        }
         
         h3 {
           font-family: "Noto Serif",serif;
@@ -233,6 +240,10 @@ body {
   &--center {
     padding-left: 2.5rem;
 
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2.5rem;
+    }
+
     h3 {
       font-family: "Noto Serif",serif;
       font-weight: bold;
@@ -260,6 +271,10 @@ body {
 
     .footer--heading {
       margin-bottom: 2.5rem;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
     }
 
     .btn-group {
@@ -331,6 +346,69 @@ body {
             height: 1.25rem;
             top: calc(50% - 0.625rem);
             width: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  &--end {
+    flex-direction: row;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+    }
+
+    .footer--copyright {
+      flex: 1;
+
+      p {
+        color: $white;
+        font-family: "proxima-nova",sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: normal;
+
+        a {
+          position: relative;
+          -webkit-text-decoration: underline $white 0.125rem;
+          text-decoration: underline $white 0.125rem;
+          color: $white;
+
+          &::before {
+            background-color: $white;
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 1.25rem;
+            top: calc(50% - 0.625rem);
+            width: 2px;
+          }
+        }
+      }
+    }
+
+    .footer--accessibility {
+      flex: 1;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: $white;
+        font-family: "proxima-nova",sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: normal;
+
+        li {
+          margin: 0;
+          padding: 0;
+
+          a {
+            color: $white;
           }
         }
       }
