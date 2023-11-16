@@ -73,7 +73,7 @@ body {
       
       .nav-link {
         color: $dark_teal;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1rem;
         text-decoration: none;
         display: block;
@@ -144,6 +144,56 @@ body {
 .main-nav {
   .navbar-nav {
     .nav-item {
+      &.dropdown {
+        .dropdown-menu {
+          width: 90vw;
+          
+          @include media-breakpoint-up(lg) {
+            width: max-content;
+            max-width: 50vw;
+            padding: $spacer;
+          }
+          
+          .dropdown-menu_group {
+            margin: 0;
+            padding: .5rem;
+
+            @include media-breakpoint-up(lg) {
+              padding: $spacer;
+            }
+            
+            li {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+
+              .menu_title {
+                color: $dark_teal;
+                font-weight: bold;
+              }
+
+              .dropdown-item {
+                text-decoration: underline;
+
+                &:hover,
+                &:focus {
+                  text-decoration: none;
+                  background-color: unset;
+                }
+              }
+            }
+          }
+          
+          &.show {
+            @include media-breakpoint-up(lg) {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+      
       .nav-link {
         display: flex;
         align-items: center;
@@ -156,13 +206,28 @@ body {
 
         &.dropdown-toggle {
           &::after {
-            display: flex;
-            @include font_awesome_family;
-            content: '\f078';
-            border: 0;
-            vertical-align: 0;
-            margin-left: 16px;
-            font-size: .55rem;;
+            display: none;
+          }
+        }
+        .icon {
+          transform: rotate(-90deg);
+          transition: all .3s;
+          
+          @include media-breakpoint-up(lg) {
+            transform: rotate(0deg);
+            transition: all .3s;
+          }
+        }
+
+        &.show {
+          .icon {
+            transform: rotate(0deg);
+            transition: all .3s;
+            
+            @include media-breakpoint-up(lg) {
+              transform: rotate(180deg);
+              transition: all .3s;
+            }
           }
         }
       }
