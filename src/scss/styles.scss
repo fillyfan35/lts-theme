@@ -220,6 +220,9 @@ body {
         }
 
         &.show {
+          background-color: $beige;
+          color: $dark_teal;
+          
           .icon {
             transform: rotate(0deg);
             transition: all .3s;

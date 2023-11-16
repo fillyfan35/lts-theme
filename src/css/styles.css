@@ -146,13 +146,16 @@ body {
       .main-nav .navbar-nav .nav-item .nav-link .icon {
         transform: rotate(0deg);
         transition: all .3s; } }
-  .main-nav .navbar-nav .nav-item .nav-link.show .icon {
-    transform: rotate(0deg);
-    transition: all .3s; }
-    @media (min-width: 992px) {
-      .main-nav .navbar-nav .nav-item .nav-link.show .icon {
-        transform: rotate(180deg);
-        transition: all .3s; } }
+  .main-nav .navbar-nav .nav-item .nav-link.show {
+    background-color: #fff6da;
+    color: #1d5970; }
+    .main-nav .navbar-nav .nav-item .nav-link.show .icon {
+      transform: rotate(0deg);
+      transition: all .3s; }
+      @media (min-width: 992px) {
+        .main-nav .navbar-nav .nav-item .nav-link.show .icon {
+          transform: rotate(180deg);
+          transition: all .3s; } }
 
 @media (min-width: 992px) {
   .main-nav .navbar-nav .nav-item:hover, .main-nav .navbar-nav .nav-item:focus, .main-nav .navbar-nav .nav-item:focus-within {
