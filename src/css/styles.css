@@ -76,6 +76,8 @@ body {
   .utility-nav--end .btn-search:hover, .utility-nav--end .btn-search:focus {
     color: #1d5970;
     background-color: #fff; }
+  .utility-nav--end .btn-search .leh-search--icon {
+    line-height: 1.2; }
 
 .navbar-light .navbar-toggler {
   background-color: #1d5970;
@@ -88,7 +90,7 @@ body {
     background-image: unset;
     height: unset;
     width: unset; }
-    .navbar-light .navbar-toggler .navbar-toggler-icon .fa-bars {
+    .navbar-light .navbar-toggler .navbar-toggler-icon .icon-close {
       font-size: 30px; }
 
 .bg-teal {
