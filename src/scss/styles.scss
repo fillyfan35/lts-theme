@@ -107,6 +107,10 @@ body {
         color: $dark_teal;
         background-color: $white;
       }
+
+      .leh-search--icon {
+        line-height: 1.2;
+      }
     }
   }
 }
@@ -125,7 +129,7 @@ body {
       height: unset;
       width: unset;
       
-      .fa-bars {
+      .icon-close {
         font-size: 30px;
       }
     }
